@@ -1,0 +1,861 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/webfont/1.6.28/webfontloader.js"
+      integrity="sha512-v/wOVTkoU7mXEJC3hXnw9AA6v32qzpknvuUF6J2Lbkasxaxn2nYcl+HGB7fr/kChGfCqubVr1n2sq1UFu3Gh1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/livescore.css" />
+    <link rel="stylesheet" href="../css/scorecard.css" />
+
+    <title>Cricket Live Score</title>
+    <link
+      rel="shortcut icon"
+      href="../assets/home/favicon_pirnav.jpg"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <!-- 
+    /* ========================================================================= */
+    /* ========================================================================= */
+                                    /* NAVBAR WITH HEADER SECTION */
+    /* ========================================================================= */
+    /* ========================================================================= */
+     -->
+
+    <nav class="navbar">
+      <div class="navbar_nav">
+        <div class="logo">
+          <h1>Logo</h1>
+        </div>
+        <ul class="nav-links">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="./livescore.html">Live Scores</a></li>
+          <li><a href="./scorecard.html">ScoreCard</a></li>
+
+          <li class="dropdown">
+            <a href="#">Teams</a>
+            <div class="dropdown-content">
+              <a href="#">India</a>
+              <a href="#">Srilanka</a>
+              <a href="#">Australia</a>
+              <a href="#">England</a>
+              <a href="#">Bangladesh</a>
+              <a href="#">West Indies</a>
+              <a href="#">South Africa</a>
+              <a href="#">zimbabwe</a>
+              <a href="#">Pakistan</a>
+              <a href="#">Afghanisthan</a>
+            </div>
+          </li>
+
+          <li class="dropdown">
+            <a href="#">Series</a>
+            <div class="dropdown-content">
+              <a href="#">Bangladesh Tour 2024</a>
+              <a href="#">New Zeland Tour 2024</a>
+              <a href="#">South Africa Tour 2024</a>
+              <a href="#">ICC Womens T-20 World-Cup</a>
+              <a href="#">England Tour of Pakisthan</a>
+              <a href="#">All Series</a>
+            </div>
+          </li>
+
+          <li class="dropdown">
+            <a href="#">News</a>
+            <div class="dropdown-content">
+              <a href="#">All News</a>
+              <a href="#">Specials</a>
+              <a href="#">Opinions</a>
+              <a href="#">Interviews</a>
+              <a href="#">SpotLights</a>
+              <a href="#">Stats & Analysis</a>
+              <a href="#">Harsha Bhogle</a>
+            </div>
+          </li>
+
+          <li class="dropdown">
+            <a href="#">Videos</a>
+            <div class="dropdown-content">
+              <a href="#">All Videos</a>
+              <a href="#">Categories</a>
+              <a href="#">Playlists</a>
+            </div>
+          </li>
+
+          <li class="dropdown">
+            <a href="#">Rankings</a>
+            <div class="dropdown-content">
+              <a href="#">ICC Rankings Men</a>
+              <a href="#">ICC Rankings Women</a>
+            </div>
+          </li>
+
+          <li class="dropdown">
+            <a href="#">More</a>
+            <div class="dropdown-content">
+              <a href="#">World Test Chompionship</a>
+              <a href="#">Photos</a>
+              <a href="#">Mobile Apps</a>
+              <a href="#">Careers</a>
+              <a href="#">Contact Us</a>
+            </div>
+          </li>
+
+          <li><a href="../pirnav_app/html/contact.html">Contact</a></li>
+        </ul>
+        <div class="menu-toggle" id="mobile-menu">
+          <i class="fas fa-bars" id="menu-icon"></i>
+        </div>
+      </div>
+    </nav>
+
+    <!-- 
+    /* ========================================================================= */
+    /* ========================================================================= */
+                                    /* SCORE CARD SECTION */
+    /* ========================================================================= */
+    /* ========================================================================= */
+     -->
+
+    <div class="match-card-container">
+      <h3>
+        India vs Bangladesh, 3rd T20I at Hyderabad, IND vs BDESH, Oct 12 2024 -
+        Full Scorecard
+      </h3>
+      <div class="match-card">
+        <div class="match-card-content">
+          <div class="top-content">
+            <div class="match-card-topleft">
+              <h4 class="red-text">Live .</h4>
+              <p>
+                3rd T20I (N), Hyderabad, October 12, 2024, Bangladesh tour of
+                India
+              </p>
+            </div>
+            <div class="match-card-topright">
+              <div class="controls">
+                <span>&lt; Prev</span> | <span>Next &gt;</span> | <span>:</span>
+              </div>
+            </div>
+          </div>
+          <hr />
+
+          <div class="bottom-content">
+            <div class="middle-leftside">
+              <div class="match-icons">
+                <div class="icon-text">
+                  <img src="../assets/india.png" alt="india" />
+                  <h3>India</h3>
+                </div>
+                <div class="icon-text">
+                  <img src="../assets/bangla2.png" alt="bangladesh" />
+                  <h3>Bangladesh</h3>
+                </div>
+              </div>
+            </div>
+            <div class="middle-rightside">
+              <p>
+                (63 ov)
+                <span class="highlight"> 168/5</span>.
+              </p>
+            </div>
+          </div>
+          <p class="match-para">Current RR: 2.66 • Min. Ov. Rem: 27</p>
+        </div>
+        <hr />
+
+        <div class="links">
+          <a href="./livescore.html" class="link">Live</a>
+          <a href="./scorecard.html" class="link">Scorecard</a>
+          <a href="#" class="link">Commentary</a>
+          <a href="#" class="link">News</a>
+          <a href="#" class="link">Table</a>
+          <a href="#" class="link">Fantasy</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 
+    /* ========================================================================= */
+    /* ========================================================================= */
+                                    /* SCORE CARD DETAIL SCORE SECTION */
+    /* ========================================================================= */
+    /* ========================================================================= */
+     -->
+
+    <div class="scorecard-container">
+      <div class="scorecard">
+        <div class="scorecard-with-stats">
+          <div class="table-container">
+            <table>
+              <h1
+                style="
+                  border: 1px solid gray;
+                  padding: 3px;
+                  background-color: #131b2a;
+                  color: white;
+                "
+              >
+                INDIA
+              </h1>
+              <thead>
+                <tr class="highlight">
+                  <th style="font-size: 18px; font-weight: 700;">Batting</th>
+                  <th>R</th>
+                  <th>B</th>
+                  <th>4S</th>
+                  <th>6s</th>
+                  <th>SR</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    Sanju Samson
+                    <span style="font-size: 12px"
+                      >c Mahedi Hasan b Mustafizur Rahman</span
+                    >
+                  </td>
+                  <td>111</td>
+                  <td>47</td>
+                  <td>11</td>
+                  <td>8</td>
+                  <td>236.17</td>
+                </tr>
+                <tr>
+                  <td>
+                    Abhishek Sharma 
+                    <span style="font-size: 12px"
+                      >c Mahedi Hasan b Tanzim Hasan Sakib</span
+                    >
+                  </td>
+                  <td>4</td>
+                  <td>4</td>
+                  <td>1</td>
+                  <td>0</td>
+                  <td>100.00</td>
+                </tr>
+                <tr>
+                  <td>
+                    Suryakumar Yadav (c)
+                    <span style="font-size: 12px"
+                      >c Rishad Hossain b Mahmudullah</span
+                    >
+                  </td>
+                  <td>75</td>
+                  <td>35</td>
+                  <td>8</td>
+                  <td>5</td>
+                  <td>214.21</td>
+                </tr>
+                <tr>
+                  <td>
+                    Riyan Parag 
+                    <span style="font-size: 12px"
+                      >c †Litton Das b Taskin Ahmed</span
+                    >
+                  </td>
+                  <td>34</td>
+                  <td>13</td>
+                  <td>1</td>
+                  <td>4</td>
+                  <td>261.21</td>
+                </tr>
+                <tr>
+                  <td>
+                    Hardik Pandya 
+                    <span style="font-size: 12px"
+                      >c Rishad Hossain b Tanzim Hasan Sakib</span
+                    >
+                  </td>
+                  <td>47</td>
+                  <td>18</td>
+                  <td>4</td>
+                  <td>4</td>
+                  <td>261.11</td>
+                </tr>
+                <tr>
+                  <td>
+                    Rinku Singh 
+                    <span style="font-size: 12px"
+                      >not out</span
+                    >
+                  </td>
+                  <td>8</td>
+                  <td>4</td>
+                  <td>0</td>
+                  <td>1</td>
+                  <td>200.00</td>
+                </tr>
+                <tr>
+                  <td>
+                    Nitish Kumar Reddy 
+                    <span style="font-size: 12px"
+                      >c Mahedi Hasan b Tanzim Hasan Sakib</span
+                    >
+                  </td>
+                  <td>0</td>
+                  <td>1</td>
+                  <td>0</td>
+                  <td>0</td>
+                  <td>0.00</td>
+                </tr>
+                <tr>
+                  <td>
+                    Washington Sundar 
+                    <span style="font-size: 12px"
+                      >not out</span
+                    >
+                  </td>
+                  <td>1</td>
+                  <td>1</td>
+                  <td>0</td>
+                  <td>0</td>
+                  <td>100.00</td>
+                </tr>
+  
+                <!-- EXTRA BALLS -->
+  
+                <tr>
+                  <td style="font-size: 15px; font-weight: 400;">
+                    Extras
+                    <span style="font-size: 12px;"
+                      >(b 5, lb 6, nb 3, w 3)</span
+                    >
+                  </td>
+                  <td>17	</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+  
+                <!-- TOTAL SCORE -->
+  
+                <tr class="highlight">
+                  <td style="font-size: 15px; font-weight: 700;">
+                    TOTAL
+                    <span style="font-size: 12px;"
+                      >20 Ov
+                      (RR: 14.85)</span
+                    >
+                  </td>
+                  <td>297/6	
+                  </td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+            </table>
+                <!-- DIDN'T BATTING -->
+                <div class="batting-info">
+                  <div class="not-batting">
+                    <p><span>Did not bat: </span>
+                      Varun Chakravarthy, 
+                      Mayank Yadav, 
+                      Ravi Bishnoi </p>
+                  </div>
+                  <!-- FALL OF WICKETS -->
+                  <div class="fall-wickets">
+                    <p><span>Fall of wickets:</span> 1-23 (Abhishek Sharma, 2.1 ov), 2-196 (Sanju Samson, 13.4 ov), 3-206 (Suryakumar Yadav, 14.3 ov), 4-276 (Riyan Parag, 18.4 ov), 5-289 (Hardik Pandya, 19.3 ov), 6-289 (Nitish Kumar Reddy, 19.4 ov) • 
+                      DRS</p>
+                  </div>
+                </div>
+                <table>
+                <tr class="highlight">
+                  <th style="font-size: 18px; font-weight: 700;">Bowling</th>
+                  <td>O</td>
+                  <td>M</td>
+                  <td>R</td>
+                  <td>W</td>
+                  <td>Eco</td>
+                </tr>
+                <tr>
+                  <td>Mahedi Hasan</td>
+                  <td>4</td>
+                  <td>0</td>
+                  <td>45</td>
+                  <td>0</td>
+                  <td>11.25</td>
+                </tr>
+                <tr>
+                  <td>Taskin Ahmed</td>
+                  <td>4</td>
+                  <td>0</td>
+                  <td>51</td>
+                  <td>1</td>
+                  <td>12.75</td>
+                </tr>
+                <tr>
+                  <td>Tanzim Hasan Sakib </td>
+                  <td>4</td>
+                  <td>0</td>
+                  <td>66</td>
+                  <td>3</td>
+                  <td>16.50</td>
+                </tr>
+                <tr>
+                  <td>Mustafizur Rahman</td>
+                  <td>4</td>
+                  <td>0</td>
+                  <td>52</td>
+                  <td>1</td>
+                  <td>13.00</td>
+                </tr>
+                <tr>
+                  <td>Rishad Hossain</td>
+                  <td>2</td>
+                  <td>0</td>
+                  <td>46</td>
+                  <td>0</td>
+                  <td>23.00</td>
+                </tr>
+                <tr>
+                  <td>Mahmudullah</td>
+                  <td>2</td>
+                  <td>0</td>
+                  <td>26</td>
+                  <td>1</td>
+                  <td>13.00</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+  
+          <div class="stats-card-container">
+            <div class="stats-card">
+              <h4 class="stats-card-title">Key Statistics</h4>
+              <div class="underline"></div>
+              <p>Partnership: <span>112(188)</span></p>
+              <p>Last 10 overs:<span> 86 runs, 0 wkts.</span></p>
+              <p>Toss:<span> Vidarbha (Batting)</span></p>
+            </div>
+          </div>
+        </div>
+
+        <!-- ================================= -->
+        <!-- SECOND TABLE -->
+        <!-- ================================= -->
+
+
+       <div class="scorecard-with-stats">
+        <div class="table-container">
+          <table>
+            <h1
+              style="
+                border: 1px solid gray;
+                padding: 3px;
+                background-color: #131b2a;
+                color: white;
+              "
+            >
+              Bangladesh
+            </h1>
+            <thead>
+              <tr class="highlight">
+                <th style="font-size: 18px; font-weight: 700;">Batting</th>
+                <th>R</th>
+                <th>B</th>
+                <th>4S</th>
+                <th>6s</th>
+                <th>SR</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  Parvez Hossain Emon 
+                  <span style="font-size: 12px"
+                    >c Parag b MP Yadav</span
+                  >
+                </td>
+                <td>0</td>
+                <td>1</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0.00</td>
+              </tr>
+              <tr>
+                <td>
+                  Tanzid Hasan 
+                  <span style="font-size: 12px"
+                    >c Varun b Washington Sundar</span
+                  >
+                </td>
+                <td>15</td>
+                <td>12</td>
+                <td>3</td>
+                <td>0</td>
+                <td>125.00</td>
+              </tr>
+              <tr>
+                <td>
+                  Najmul Hossain Shanto (c)
+                  <span style="font-size: 12px"
+                    >c †Samson b Ravi Bishnoi</span
+                  >
+                </td>
+                <td>14</td>
+                <td>11</td>
+                <td>1</td>
+                <td>1</td>
+                <td>127.27</td>
+              </tr>
+              <tr>
+                <td>
+                  Litton Das †
+                  <span style="font-size: 12px"
+                    >c sub (NT Tilak Varma) b Ravi Bishnoi</span
+                  >
+                </td>
+                <td>42</td>
+                <td>25</td>
+                <td>8</td>
+                <td>0</td>
+                <td>168.00</td>
+              </tr>
+              <tr>
+                <td>
+                  Towhid Hridoy 
+                  <span style="font-size: 12px"
+                    >not out</span
+                  >
+                </td>
+                <td>63</td>
+                <td>42</td>
+                <td>5</td>
+                <td>3</td>
+                <td>150.00</td>
+              </tr>
+              <tr>
+                <td>
+                  Mahmudullah 
+                  <span style="font-size: 12px"
+                    >c Parag b MP Yadav</span
+                  >
+                </td>
+                <td>8</td>
+                <td>9</td>
+                <td>1</td>
+                <td>0</td>
+                <td>88.88</td>
+              </tr>
+              <tr>
+                <td>
+                  Mahedi Hasan 
+                  <span style="font-size: 12px"
+                    >c Parag b Nitish Kumar Reddy</span
+                  >
+                </td>
+                <td>3</td>
+                <td>9</td>
+                <td>0</td>
+                <td>0</td>
+                <td>33.33</td>
+              </tr>
+              <tr>
+                <td>
+                  Rishad Hossain 
+                  <span style="font-size: 12px"
+                    >c Abhishek Sharma b Ravi Bishnoi</span
+                  >
+                </td>
+                <td>0</td>
+                <td>4</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0.00</td>
+              </tr>
+
+              <tr>
+                <td>
+                  Tanzim Hasan Sakib 
+                  <span style="font-size: 12px"
+                    >not out</span
+                  >
+                </td>
+                <td>8</td>
+                <td>8</td>
+                <td>1</td>
+                <td>0</td>
+                <td>100.00</td>
+              </tr>
+  
+              <!-- EXTRA BALLS -->
+  
+              <tr>
+                <td style="font-size: 15px; font-weight: 400;">
+                  Extras	
+                  <span style="font-size: 12px;"
+                    >(lb 4, nb 1, w 6)</span
+                  >
+                </td>
+                <td>11</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+  
+              <!-- TOTAL SCORE -->
+  
+              <tr class="highlight">
+                <td style="font-size: 15px; font-weight: 700;">
+                  TOTAL
+                  <span style="font-size: 12px;"
+                    >20 Ov
+                    (RR: 8.20)</span
+                  >
+                </td>
+                <td>164/7
+                </td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+             </table>
+              <!-- DIDN'T BATTING -->
+              <div class="batting-info">
+                <div class="not-batting">
+                  <p><span>Did not bat: </span>Taskin Ahmed, 
+                    Mustafizur Rahman
+                  </p>
+                </div>
+                <!-- FALL OF WICKETS -->
+                <div class="fall-wickets">
+                  <p><span>Fall of wickets:</span> 1-0 (Parvez Hossain Emon, 0.1 ov), 2-35 (Tanzid Hasan, 3.1 ov), 3-59 (Najmul Hossain Shanto, 5.2 ov), 4-112 (Litton Das, 11.4 ov), 5-130 (Mahmudullah, 14.2 ov), 6-138 (Mahedi Hasan, 16.3 ov), 7-139 (Rishad Hossain, 17.2 ov) • 
+                    DRS</p>
+                </div>
+              </div>
+              <table>
+              <tr class="highlight">
+                <th style="font-size: 18px; font-weight: 700;">Bowling</th>
+                <td>O</td>
+                <td>M</td>
+                <td>R</td>
+                <td>W</td>
+                <td>Eco</td>
+              </tr>
+              <tr>
+                <td>Mayank Yadav</td>
+                <td>4</td>
+                <td>0</td>
+                <td>32</td>
+                <td>2</td>
+                <td>8.00</td>
+              </tr>
+              <tr>
+                <td>Hardik Pandya</td>
+                <td>3</td>
+                <td>0</td>
+                <td>32</td>
+                <td>0</td>
+                <td>10.66</td>
+              </tr>
+              <tr>
+                <td>Washington Sundar</td>
+                <td>1</td>
+                <td>0</td>
+                <td>4</td>
+                <td>1</td>
+                <td>4.00</td>
+              </tr>
+              <tr>
+                <td>Nitish Kumar Reddy</td>
+                <td>3</td>
+                <td>0</td>
+                <td>31</td>
+                <td>1</td>
+                <td>10.33</td>
+              </tr>
+              <tr>
+                <td>Ravi Bishnoi</td>
+                <td>4</td>
+                <td>1</td>
+                <td>30</td>
+                <td>3</td>
+                <td>7.50</td>
+              </tr>
+              <tr>
+                <td>Varun Chakravarthy</td>
+                <td>4</td>
+                <td>0</td>
+                <td>23</td>
+                <td>0</td>
+                <td>5.75</td>
+              </tr>
+              <tr>
+                <td>Abhishek Sharma</td>
+                <td>1</td>
+                <td>0</td>
+                <td>8</td>
+                <td>0</td>
+                <td>8.00</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="stats-card-container">
+          <div class="stats-card">
+            <h4 class="stats-card-title">Key Statistics</h4>
+            <div class="underline"></div>
+            <p>Partnership: <span>112(188)</span></p>
+            <p>Last 10 overs:<span> 86 runs, 0 wkts.</span></p>
+            <p>Toss:<span> Vidarbha (Batting)</span></p>
+          </div>
+        </div>
+       </div>
+      </div>
+
+    </div>
+
+     <!-- 
+    /* ========================================================================= */
+    /* ========================================================================= */
+                                    /* MATCH DETAILS SECTION */
+    /* ========================================================================= */
+    /* ========================================================================= */
+     -->
+    <div class="match-details">
+      <div class="match-table">
+        <table>
+          <thead>
+            <th>Match Details</th>
+            <th></th>
+          </thead>
+          <thead>
+            <th style="color: #131b2a; cursor: pointer; font-weight: 900;">Rajiv Gandhi International Stadium, Uppal, Hyderabad</th>
+            <th></th>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Toss</td>
+              <td>India, elected to bat first</td>
+            </tr>
+            <tr>
+              <td>Series</td>
+              <td>Bangladesh tour of India</td>
+            </tr>
+            <tr>
+              <td>Season</td>
+              <td>2024/25</td>
+            </tr>
+            <tr>
+              <td>Player Of The Match</td>
+              <td>Sanju Samson</td>
+            </tr>
+            <tr>
+              <td>Player Of The Series</td>
+              <td>Hardik Pandya</td>
+            </tr>
+            <tr>
+              <td>Series result</td>
+              <td>India won the 3-match series 3-0</td>
+            </tr>
+            <tr>
+              <td>Umpires</td>
+              <td>KN Ananthapadmanabhan, Rohan Pandit</td>
+            </tr>
+            <tr>
+              <td>Match Referee</td>
+              <td>Jeff Crowe</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+
+
+    <!-- ============================================== -->
+    <!-- Footer Section -->
+    <!-- ============================================== -->
+
+    <footer>
+      <div class="footer-container">
+        <div class="left-side">
+          <div class="footer-cards">
+            <div class="footer-card">
+              <i
+                class="fa-brands fa-apple"
+                style="font-size: 30px; color: silver"
+              ></i>
+              <div class="footer-card-content">
+                <p>Download on the</p>
+                <h3>App Store</h3>
+              </div>
+            </div>
+            <div class="footer-card">
+              <i class="fa-brands fa-google-play" style="font-size: 30px"></i>
+              <div class="footer-card-content">
+                <p>Get it on</p>
+                <h3>Google PlayStore</h3>
+              </div>
+            </div>
+          </div>
+          <p>Follow us on:</p>
+          <div class="social-icons">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-x-twitter"></i>
+            <i class="fa-brands fa-linkedin"></i>
+            <i class="fa-brands fa-instagram"></i>
+          </div>
+        </div>
+        <div class="right-side">
+          <div class="column">
+            <a href="#">Match Schedules</a>
+            <a href="#">Live Scores</a>
+            <a href="#">Cricket News</a>
+            <a href="#">Cricket Videos</a>
+            <a href="#">All Series</a>
+            <a href="#">Women's World Cup 2024</a>
+          </div>
+          <div class="column">
+            <a href="#">Palyers</a>
+            <a href="#">Rankings</a>
+            <a href="#">Teams</a>
+            <a href="#">Records</a>
+            <a href="#">ICC</a>
+          </div>
+          <div class="column">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Use</a>
+            <a href="#">Security</a>
+            <a href="#">Contact Us</a>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>&copy; 2024 live cricket. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button
+      id="scrollToTopBtn"
+      class="scroll-to-top-btn"
+      aria-label="Scroll to top"
+    >
+      <i class="fa-solid fa-chevron-up"></i>
+      <!-- Using Font Awesome Icon -->
+    </button>
+
+    <script src="../javascript/script.js"></script>
+  </body>
+</html>

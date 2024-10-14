@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/webfont/1.6.28/webfontloader.js"
+      integrity="sha512-v/wOVTkoU7mXEJC3hXnw9AA6v32qzpknvuUF6J2Lbkasxaxn2nYcl+HGB7fr/kChGfCqubVr1n2sq1UFu3Gh1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Cricket Live Score</title>
+    <link
+      rel="shortcut icon"
+      href="./assets/home/favicon_pirnav.jpg"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <!-- 
+    /* ========================================================================= */
+    /* ========================================================================= */
+                                    /* NAVBAR WITH HEADER SECTION */
+    /* ========================================================================= */
+    /* ========================================================================= */
+     -->
+
+    <nav class="navbar">
+      <div class="navbar_nav">
+        <div class="logo">
+          <h1>Logo</h1>
+        </div>
+        <ul class="nav-links">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./html/livescore.html">Live Scores</a></li>
+          <li><a href="./html/scorecard.html">ScoreCard</a></li>
+
+          <li class="dropdown">
+            <a href="#">Teams</a>
+            <div class="dropdown-content">
+              <a href="#">India</a>
+              <a href="#">Srilanka</a>
+              <a href="#">Australia</a>
+              <a href="#">England</a>
+              <a href="#">Bangladesh</a>
+              <a href="#">West Indies</a>
+              <a href="#">South Africa</a>
+              <a href="#">zimbabwe</a>
+              <a href="#">Pakistan</a>
+              <a href="#">Afghanisthan</a>
+            </div>
+          </li>
+
+          <li class="dropdown">
+            <a href="#">Series</a>
+            <div class="dropdown-content">
+              <a href="#">Bangladesh Tour 2024</a>
+              <a href="#">New Zeland Tour 2024</a>
+              <a href="#">South Africa Tour 2024</a>
+              <a href="#">ICC Womens T-20 World-Cup</a>
+              <a href="#">England Tour of Pakisthan</a>
+              <a href="#">All Series</a>
+            </div>
+          </li>
+
+          <li class="dropdown">
+            <a href="#">News</a>
+            <div class="dropdown-content">
+              <a href="#">All News</a>
+              <a href="#">Specials</a>
+              <a href="#">Opinions</a>
+              <a href="#">Interviews</a>
+              <a href="#">SpotLights</a>
+              <a href="#">Stats & Analysis</a>
+              <a href="#">Harsha Bhogle</a>
+            </div>
+          </li>
+
+          <li class="dropdown">
+            <a href="#">Videos</a>
+            <div class="dropdown-content">
+              <a href="#">All Videos</a>
+              <a href="#">Categories</a>
+              <a href="#">Playlists</a>
+            </div>
+          </li>
+
+          <li class="dropdown">
+            <a href="#">Rankings</a>
+            <div class="dropdown-content">
+              <a href="#">ICC Rankings Men</a>
+              <a href="#">ICC Rankings Women</a>
+            </div>
+          </li>
+
+          <li class="dropdown">
+            <a href="#">More</a>
+            <div class="dropdown-content">
+              <a href="#">World Test Chompionship</a>
+              <a href="#">Photos</a>
+              <a href="#">Mobile Apps</a>
+              <a href="#">Careers</a>
+              <a href="#">Contact Us</a>
+            </div>
+          </li>
+
+          <li><a href="../pirnav_app/html/contact.html">Contact</a></li>
+        </ul>
+        <div class="menu-toggle" id="mobile-menu">
+          <i class="fas fa-bars" id="menu-icon"></i>
+        </div>
+      </div>
+    </nav>
+
+    <!-- 
+    /* ========================================================================= */
+    /* ========================================================================= */
+                                    /* Matches Schedule SECTION */
+    /* ========================================================================= */
+    /* ========================================================================= */
+     -->
+
+    <div class="all-matches">
+      <div class="heading">
+        <h1>All Matches</h1>
+      </div>
+      <div class="slider">
+        <button class="arrow left" onclick="slide(-1)">&#10094;</button>
+        <div class="card-container">
+          <div class="card" id="card1">
+            <p>
+              <span class="highlight">LIVE</span> &#9679; 08:00PM &#9679; 1<sup
+                >st</sup
+              >
+              T20I &nbsp; &#9679; Uppal
+            </p>
+            <div class="content">
+              <div class="left">
+                <img src="./assets/india.png" alt="icon" class="icon" />
+                <h6>India</h6>
+              </div>
+              <div class="right">
+                <h3>Text 1</h3>
+              </div>
+            </div>
+            <div class="content">
+              <div class="left">
+                <img src="./assets/Australia.png" alt="icon" class="icon" />
+                <h6>Heading 1</h6>
+              </div>
+              <div class="right">
+                <h3>Text 1</h3>
+              </div>
+            </div>
+            <p>Some description text for card</p>
+            <div class="underline"></div>
+            <div class="footer">
+              <p>Schedule</p>
+              <p>Report</p>
+              <p>Series</p>
+            </div>
+          </div>
+
+          <div class="card" id="card1">
+            <p>Starting <span class="highlight">Text</span></p>
+            <div class="content">
+              <div class="left">
+                <img src="./assets/india.png" alt="icon" class="icon" />
+                <h6>India</h6>
+              </div>
+              <div class="right">
+                <h3>Text 1</h3>
+              </div>
+            </div>
+            <div class="content">
+              <div class="left">
+                <img src="./assets/Australia.png" alt="icon" class="icon" />
+                <h6>Heading 1</h6>
+              </div>
+              <div class="right">
+                <h3>Text 1</h3>
+              </div>
+            </div>
+            <p>Some description text for card</p>
+            <div class="underline"></div>
+            <div class="footer">
+              <p>Schedule</p>
+              <p>Report</p>
+              <p>Series</p>
+            </div>
+          </div>
+
+          <div class="card" id="card1">
+            <p>Starting <span class="highlight">Text</span></p>
+            <div class="content">
+              <div class="left">
+                <img src="./assets/india.png" alt="icon" class="icon" />
+                <h6>India</h6>
+              </div>
+              <div class="right">
+                <h3>Text 1</h3>
+              </div>
+            </div>
+            <div class="content">
+              <div class="left">
+                <img src="./assets/Australia.png" alt="icon" class="icon" />
+                <h6>Heading 1</h6>
+              </div>
+              <div class="right">
+                <h3>Text 1</h3>
+              </div>
+            </div>
+            <p>Some description text for card</p>
+            <div class="underline"></div>
+            <div class="footer">
+              <p>Schedule</p>
+              <p>Report</p>
+              <p>Series</p>
+            </div>
+          </div>
+
+          <div class="card" id="card1">
+            <p>Starting <span class="highlight">Text</span></p>
+            <div class="content">
+              <div class="left">
+                <img src="./assets/india.png" alt="icon" class="icon" />
+                <h6>India</h6>
+              </div>
+              <div class="right">
+                <h3>Text 1</h3>
+              </div>
+            </div>
+            <div class="content">
+              <div class="left">
+                <img src="./assets/Australia.png" alt="icon" class="icon" />
+                <h6>Heading 1</h6>
+              </div>
+              <div class="right">
+                <h3>Text 1</h3>
+              </div>
+            </div>
+            <p>Some description text for card</p>
+            <div class="underline"></div>
+            <div class="footer">
+              <p>Schedule</p>
+              <p>Report</p>
+              <p>Series</p>
+            </div>
+          </div>
+
+          <div class="card" id="card1">
+            <p>Starting <span class="highlight">Text</span></p>
+            <div class="content">
+              <div class="left">
+                <img src="./assets/india.png" alt="icon" class="icon" />
+                <h6>India</h6>
+              </div>
+              <div class="right">
+                <h3>Text 1</h3>
+              </div>
+            </div>
+            <div class="content">
+              <div class="left">
+                <img src="./assets/Australia.png" alt="icon" class="icon" />
+                <h6>Heading 1</h6>
+              </div>
+              <div class="right">
+                <h3>Text 1</h3>
+              </div>
+            </div>
+            <p>Some description text for card</p>
+            <div class="underline"></div>
+            <div class="footer">
+              <p>Schedule</p>
+              <p>Report</p>
+              <p>Series</p>
+            </div>
+          </div>
+
+          <div class="card" id="card1">
+            <p>Starting <span class="highlight">Text</span></p>
+            <div class="content">
+              <div class="left">
+                <img src="./assets/india.png" alt="icon" class="icon" />
+                <h6>India</h6>
+              </div>
+              <div class="right">
+                <h3>Text 1</h3>
+              </div>
+            </div>
+            <div class="content">
+              <div class="left">
+                <img src="./assets/Australia.png" alt="icon" class="icon" />
+                <h6>Heading 1</h6>
+              </div>
+              <div class="right">
+                <h3>Text 1</h3>
+              </div>
+            </div>
+            <p>Some description text for card</p>
+            <div class="underline"></div>
+            <div class="footer">
+              <p>Schedule</p>
+              <p>Report</p>
+              <p>Series</p>
+            </div>
+          </div>
+
+          <div class="card" id="card1">
+            <p>Starting <span class="highlight">Text</span></p>
+            <div class="content">
+              <div class="left">
+                <img src="./assets/india.png" alt="icon" class="icon" />
+                <h6>India</h6>
+              </div>
+              <div class="right">
+                <h3>Text 1</h3>
+              </div>
+            </div>
+            <div class="content">
+              <div class="left">
+                <img src="./assets/Australia.png" alt="icon" class="icon" />
+                <h6>Heading 1</h6>
+              </div>
+              <div class="right">
+                <h3>Text 1</h3>
+              </div>
+            </div>
+            <p>Some description text for card</p>
+            <div class="underline"></div>
+            <div class="footer">
+              <p>Schedule</p>
+              <p>Report</p>
+              <p>Series</p>
+            </div>
+          </div>
+
+          <div class="card" id="card1">
+            <p>Starting <span class="highlight">Text</span></p>
+            <div class="content">
+              <div class="left">
+                <img src="./assets/india.png" alt="icon" class="icon" />
+                <h6>India</h6>
+              </div>
+              <div class="right">
+                <h3>Text 1</h3>
+              </div>
+            </div>
+            <div class="content">
+              <div class="left">
+                <img src="./assets/Australia.png" alt="icon" class="icon" />
+                <h6>Heading 1</h6>
+              </div>
+              <div class="right">
+                <h3>Text 1</h3>
+              </div>
+            </div>
+            <p>Some description text for card</p>
+            <div class="underline"></div>
+            <div class="footer">
+              <p>Schedule</p>
+              <p>Report</p>
+              <p>Series</p>
+            </div>
+          </div>
+
+          <div class="card" id="card1">
+            <p>Starting <span class="highlight">Text</span></p>
+            <div class="content">
+              <div class="left">
+                <img src="./assets/india.png" alt="icon" class="icon" />
+                <h6>India</h6>
+              </div>
+              <div class="right">
+                <h3>Text 1</h3>
+              </div>
+            </div>
+            <div class="content">
+              <div class="left">
+                <img src="./assets/Australia.png" alt="icon" class="icon" />
+                <h6>Heading 1</h6>
+              </div>
+              <div class="right">
+                <h3>Text 1</h3>
+              </div>
+            </div>
+            <p>Some description text for card</p>
+            <div class="underline"></div>
+            <div class="footer">
+              <p>Schedule</p>
+              <p>Report</p>
+              <p>Series</p>
+            </div>
+          </div>
+
+          <div class="card" id="card1">
+            <p>Starting <span class="highlight">Text</span></p>
+            <div class="content">
+              <div class="left">
+                <img src="./assets/india.png" alt="icon" class="icon" />
+                <h6>India</h6>
+              </div>
+              <div class="right">
+                <h3>Text 1</h3>
+              </div>
+            </div>
+            <div class="content">
+              <div class="left">
+                <img src="./assets/Australia.png" alt="icon" class="icon" />
+                <h6>Heading 1</h6>
+              </div>
+              <div class="right">
+                <h3>Text 1</h3>
+              </div>
+            </div>
+            <p>Some description text for card</p>
+            <div class="underline"></div>
+            <div class="footer">
+              <p>Schedule</p>
+              <p>Report</p>
+              <p>Series</p>
+            </div>
+          </div>
+
+          <div class="card" id="card1">
+            <p>Starting <span class="highlight">Text</span></p>
+            <div class="content">
+              <div class="left">
+                <img src="./assets/india.png" alt="icon" class="icon" />
+                <h6>India</h6>
+              </div>
+              <div class="right">
+                <h3>Text 1</h3>
+              </div>
+            </div>
+            <div class="content">
+              <div class="left">
+                <img src="./assets/Australia.png" alt="icon" class="icon" />
+                <h6>Heading 1</h6>
+              </div>
+              <div class="right">
+                <h3>Text 1</h3>
+              </div>
+            </div>
+            <p>Some description text for card</p>
+            <div class="underline"></div>
+            <div class="footer">
+              <p>Schedule</p>
+              <p>Report</p>
+              <p>Series</p>
+            </div>
+          </div>
+
+          <div class="card" id="card1">
+            <p>Starting <span class="highlight">Text</span></p>
+            <div class="content">
+              <div class="left">
+                <img src="./assets/india.png" alt="icon" class="icon" />
+                <h6>India</h6>
+              </div>
+              <div class="right">
+                <h3>Text 1</h3>
+              </div>
+            </div>
+            <div class="content">
+              <div class="left">
+                <img src="./assets/Australia.png" alt="icon" class="icon" />
+                <h6>Heading 1</h6>
+              </div>
+              <div class="right">
+                <h3>Text 1</h3>
+              </div>
+            </div>
+            <p>Some description text for card</p>
+            <div class="underline"></div>
+            <div class="footer">
+              <p>Schedule</p>
+              <p>Report</p>
+              <p>Series</p>
+            </div>
+          </div>
+
+          <div class="card" id="card1">
+            <p>Starting <span class="highlight">Text</span></p>
+            <div class="content">
+              <div class="left">
+                <img src="./assets/india.png" alt="icon" class="icon" />
+                <h6>India</h6>
+              </div>
+              <div class="right">
+                <h3>Text 1</h3>
+              </div>
+            </div>
+            <div class="content">
+              <div class="left">
+                <img src="./assets/Australia.png" alt="icon" class="icon" />
+                <h6>Heading 1</h6>
+              </div>
+              <div class="right">
+                <h3>Text 1</h3>
+              </div>
+            </div>
+            <p>Some description text for card</p>
+            <div class="underline"></div>
+            <div class="footer">
+              <p>Schedule</p>
+              <p>Report</p>
+              <p>Series</p>
+            </div>
+          </div>
+
+          <div class="card" id="card1">
+            <p>Starting <span class="highlight">Text</span></p>
+            <div class="content">
+              <div class="left">
+                <img src="./assets/india.png" alt="icon" class="icon" />
+                <h6>India</h6>
+              </div>
+              <div class="right">
+                <h3>Text 1</h3>
+              </div>
+            </div>
+            <div class="content">
+              <div class="left">
+                <img src="./assets/Australia.png" alt="icon" class="icon" />
+                <h6>Heading 1</h6>
+              </div>
+              <div class="right">
+                <h3>Text 1</h3>
+              </div>
+            </div>
+            <p>Some description text for card</p>
+            <div class="underline"></div>
+            <div class="footer">
+              <p>Schedule</p>
+              <p>Report</p>
+              <p>Series</p>
+            </div>
+          </div>
+
+          <!-- Repeat the above block for 14 more cards, changing the id and content accordingly -->
+          <div class="card" id="card15">
+            <p>Starting <span class="highlight">Text</span></p>
+            <div class="content">
+              <div class="left">
+                <img src="icon.png" alt="icon" class="icon" />
+                <h6>Heading 15</h6>
+              </div>
+              <div class="right">
+                <h3>Text 15</h3>
+              </div>
+            </div>
+            <p>Some description text for card 15.</p>
+            <div class="underline"></div>
+            <div class="footer">
+              <p>Schedule</p>
+              <p>Report</p>
+              <p>Series</p>
+            </div>
+          </div>
+        </div>
+        <button class="arrow right" onclick="slide(1)">&#10095;</button>
+      </div>
+    </div>
+
+    <!-- =============================================== -->
+    <!-- =============================================== -->
+    <!-- NEWS SECTION CONTAINER -->
+    <!-- =============================================== -->
+    <!-- =============================================== -->
+
+    <div class="news-container">
+      <div class="news-card" style="background-color: #f6fcfd">
+        <h3 class="card-heading">Featured</h3>
+        <div class="card-content">
+          <img src="./assets/news1.webp" alt="News Image" class="card-image" />
+          <div class="card-info">
+            <h2>England strike after Brook 317, Root 262 flatten Pakistan</h2>
+            <p><span>2nd Inn</span> PAK 556 & 152/6 (37 ov) vs ENG 823/7d</p>
+            <ul>
+              <li>Rasool: England further expose Pakistan's fragility</li>
+              <li>Root praises bowlers after 'earning right to win'</li>
+              <li>Breaking down four sensational years of Root</li>
+              <li>Abrar in hospital after falling ill during Multan Test</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="news-card" style="background-color: #f6fcfd">
+        <h3 class="card-heading">Latest Updates</h3>
+        <div class="card-content">
+          <img src="./assets/news2.webp" alt="News Image" class="card-image" />
+          <div class="card-info">
+            <h2>Saransh Jain, pegging away in his quest for the India blue</h2>
+            <!-- <span class="arrow">➔</span> -->
+            <ul>
+              <li>All you need to know about the two-phased Ranji season</li>
+              <li>PBKS star Shashank first a Chhattisgarh hero</li>
+              <li>Kishan to lead Jharkhand in first two games</li>
+              <li>New format: welcome experiment or momentum breaker?</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="news-card" style="background-color: #f6fcfd">
+        <h3 class="card-heading">World News</h3>
+        <div class="card-content">
+          <img src="./assets/news3.webp" alt="News Image" class="card-image" />
+          <div class="card-info">
+            <h2>Harmanpreet serves up a reminder of Harmonster</h2>
+            <p>IND-W vs SL-W: IND Women won by 82 runs</p>
+            <!-- <span class="arrow">➔</span> -->
+            <ul>
+              <li>'Bad playing through and through' behind SL's winless run</li>
+              <li>Report: Harmanpreet, bowlers demolish SL</li>
+              <li>Scenarios: How can India make it to the semis?</li>
+              <li>Stats: India's biggest win by runs (T20 WCs)</li>
+              <li>Stats: Mandhana-Shafali equal Healy-Mooney</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- =============================================== -->
+    <!-- =============================================== -->
+    <!-- TOP STORIES CONTAINER -->
+    <!-- =============================================== -->
+    <!-- =============================================== -->
+
+    <div class="top-stories-card">
+      <div class="top-stories-header">
+        <h2>Top Stories</h2>
+        <a href="#" class="see-all">See All</a>
+      </div>
+      <div class="cards-container">
+        <div class="top-card">
+          <img
+            src="./assets/story1.webp"
+            alt="Story 1"
+            class="top-card-image"
+          />
+          <div class="top-card-content">
+            <h3>'Take it to them' - How Latham wants NZ to tackle India</h3>
+            <p>2 hours ago <span>From Cricket Info</span></p>
+          </div>
+        </div>
+        <div class="top-card">
+          <img
+            src="./assets/story2.webp"
+            alt="Story 1"
+            class="top-card-image"
+          />
+          <div class="top-card-content">
+            <h3>Harmanpreet serves up a reminder of Harmonster</h3>
+            <p>2 Hours ago <span>From Cricket Info</span></p>
+          </div>
+        </div>
+        <div class="top-card">
+          <img
+            src="./assets/story3.webp"
+            alt="Story 1"
+            class="top-card-image"
+          />
+          <div class="top-card-content">
+            <h3>Breaking down four sensational years of Joe Root</h3>
+            <p>2 Hours ago <span>From Cricket Info</span></p>
+          </div>
+        </div>
+        <div class="top-card">
+          <img
+            src="./assets/story4.webp"
+            alt="Story 1"
+            class="top-card-image"
+          />
+          <div class="top-card-content">
+            <h3>Harmanpreet serves up a reminder of Harmonster</h3>
+            <p>2 Hours ago <span>From Cricket Info</span></p>
+          </div>
+        </div>
+        <div class="top-card">
+          <img
+            src="./assets/story5.webp"
+            alt="Story 1"
+            class="top-card-image"
+          />
+          <div class="top-card-content">
+            <h3>Harmanpreet serves up a reminder of Harmonster</h3>
+            <p>2 Hours ago <span>From Cricket Info</span></p>
+          </div>
+        </div>
+        <div class="top-card">
+          <img
+            src="./assets/story6.webp"
+            alt="Story 1"
+            class="top-card-image"
+          />
+          <div class="top-card-content">
+            <h3>Root: Brook's 317 just the first of his 'monster' scores</h3>
+            <p>2 Hours ago <span>From Cricket Info</span></p>
+          </div>
+        </div>
+        <div class="top-card">
+          <img
+            src="./assets/story7.webp"
+            alt="Story 1"
+            class="top-card-image"
+          />
+          <div class="top-card-content">
+            <h3>Harmanpreet serves up a reminder of Harmonster</h3>
+            <p>2 Hours ago <span>From Cricket Info</span></p>
+          </div>
+        </div>
+        <div class="top-card">
+          <img
+            src="./assets/story8.webp"
+            alt="Story 1"
+            class="top-card-image"
+          />
+          <div class="top-card-content">
+            <h3>Root: Brook's 317 just the first of his 'monster' scores</h3>
+            <p>2 Hours ago <span>From Cricket Info</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============================================== -->
+    <!-- List of data card section-->
+    <!-- ============================================== -->
+
+    <div class="card-data">
+      <div class="card-dataa">
+        <h1 class="card-data-title">Spotlight</h1>
+        <hr class="underline_line" />
+        <ul class="item-list">
+          <li>
+            <span class="icon">⦿</span>DP WORLD AND CHRIS GAYLE DELIVER KITS
+            AND CHANGING ROOM FOR BARBADOS GIRLS CRICKET CLUB
+          </li>
+          <li>
+            <span class="icon">⦿</span>DP WORLD BRINGS BEYOND BOUNDARIES
+            INITIATIVE TO THE USA
+          </li>
+          <li>
+            <span class="icon">⦿</span>DP WORLD BECOMES ICC TOP TIER PARTNER TO
+            DELIVER CRICKET AT EVERY LEVEL
+          </li>
+          <li>
+            <span class="icon">⦿</span>MRF has launched its " Ace of Pace"
+            initiative- which aims to discover India's fast bowlers
+          </li>
+          <li>
+            <span class="icon">⦿</span>DP World signs agreement as title
+            partner of delhi capitals women's team in a historic move
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- ============================================== -->
+    <!-- Footer Section -->
+    <!-- ============================================== -->
+
+    <footer>
+      <div class="footer-container">
+        <div class="left-side">
+          <div class="footer-cards">
+            <div class="footer-card">
+              <i
+                class="fa-brands fa-apple"
+                style="font-size: 30px; color: silver"
+              ></i>
+              <div class="footer-card-content">
+                <p>Download on the</p>
+                <h3>App Store</h3>
+              </div>
+            </div>
+            <div class="footer-card">
+              <i class="fa-brands fa-google-play" style="font-size: 30px"></i>
+              <div class="footer-card-content">
+                <p>Get it on</p>
+                <h3>Google PlayStore</h3>
+              </div>
+            </div>
+          </div>
+          <p>Follow us on:</p>
+          <div class="social-icons">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-x-twitter"></i>
+            <i class="fa-brands fa-linkedin"></i>
+            <i class="fa-brands fa-instagram"></i>
+          </div>
+        </div>
+        <div class="right-side">
+          <div class="column">
+            <a href="#">Match Schedules</a>
+            <a href="#">Live Scores</a>
+            <a href="#">Cricket News</a>
+            <a href="#">Cricket Videos</a>
+            <a href="#">All Series</a>
+            <a href="#">Women's World Cup 2024</a>
+          </div>
+          <div class="column">
+            <a href="#">Palyers</a>
+            <a href="#">Rankings</a>
+            <a href="#">Teams</a>
+            <a href="#">Records</a>
+            <a href="#">ICC</a>
+          </div>
+          <div class="column">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Use</a>
+            <a href="#">Security</a>
+            <a href="#">Contact Us</a>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>&copy; 2024 live cricket. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button
+      id="scrollToTopBtn"
+      class="scroll-to-top-btn"
+      aria-label="Scroll to top"
+    >
+      <i class="fa-solid fa-chevron-up"></i>
+      <!-- Using Font Awesome Icon -->
+    </button>
+
+    <script src="./javascript/script.js"></script>
+  </body>
+</html>

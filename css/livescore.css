@@ -1,0 +1,467 @@
+.banner-img {
+  /* height: 100%; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0px;
+}
+.image-container {
+  width: 80vw;
+  /* height: 40vh; */
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 900px) {
+  .image-container {
+    width: 80vh;
+    height: auto;
+  }
+}
+
+/* =========================================== */
+/* SCORE CARD SECTION */
+/* =========================================== */
+
+.match-card-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f4f4f4;
+  margin: 20px 0px;
+  padding: 10px 0px;
+}
+
+h3 {
+  margin-bottom: 10px;
+  text-align: start !important;
+}
+
+.match-card {
+  width: 80%;
+  border: 1px solid gray;
+  background: white;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+.top-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+
+.match-card-content {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.match-card-leftside {
+  width: 70%;
+}
+.red-text {
+  color: orange;
+}
+
+.controls {
+  margin-bottom: 10px;
+}
+
+hr {
+  margin: 5px 0;
+}
+
+.bottom-content {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  padding: 10px 20px;
+}
+
+.match-para {
+  padding: 0px 0px 10px 20px;
+}
+
+.match-icons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* justify-content: flex-end; */
+}
+
+.icon-text {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.icon-text img{
+    width: 40px;
+    height: 35px;
+
+}
+
+.icon-text h3 {
+  margin-bottom: 15px;
+}
+
+.highlight {
+  background-color: #f4f4f4;
+  padding: 2px 5px;
+}
+
+.links {
+  display: flex;
+  justify-content: start;
+  margin: 10px;
+  font-weight: 500;
+}
+
+.link {
+  position: relative;
+  color: black;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 2px;
+  background: transparent;
+  transition: background 0.3s;
+}
+
+.link.active::after {
+  background: black;
+}
+
+.link:hover {
+  color: blue;
+}
+
+/* Responsive styles */
+@media (max-width: 968px) {
+  .match-card {
+    width: 90%;
+  }
+  h3 {
+    font-size: 14px !important;
+  }
+  .card-content {
+    flex-direction: column;
+  }
+  .left-side,
+  .right-side {
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .match-card-container {
+    width: 100%;
+  }
+  h3 {
+    padding: 2px 15px;
+    font-size: 12px !important;
+  }
+  .top-content {
+    flex-direction: column;
+    gap: 5px;
+  }
+  .controls {
+    margin-bottom: 1px;
+  }
+  .match-card-topleft p {
+    font-size: 12px;
+  }
+  .icon-text {
+    gap: 4px;
+  }
+  .icon-text img {
+    width: 40px;
+    height: 30px;
+  }
+  .icon-text h3 {
+    margin-top: 2px;
+  }
+  .middle-rightside p {
+    font-size: 14px;
+  }
+  .match-para {
+    font-size: 14px;
+  }
+  .links {
+    font-size: 12px;
+    font-weight: 300;
+    margin: 5px;
+  }
+  .link {
+    margin: 0px 4px;
+  }
+}
+
+/* ================================================ */
+/* SCORE CARD DETAIL SCORE SECTION */
+/* ================================================ */
+
+.scorecard-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f4f4f4;
+  margin: 20px 0px;
+  padding: 10px 0px;
+}
+
+.scorecard {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.table-container {
+  flex: 1;
+  margin-right: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+}
+
+th,
+td {
+  padding: 8px;
+  text-align: center;
+  border: 1px solid #ccc;
+}
+
+.highlight {
+  background-color: gray;
+  color: white;
+}
+
+.stats-card {
+  background: white;
+  padding: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.stats-card-title {
+  background-color: #007bff;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 0 0 10px 0;
+}
+
+.underline {
+  height: 2px;
+  background-color: gray;
+  margin-bottom: 15px;
+}
+
+p {
+  margin: 5px 0;
+}
+
+span {
+  color: black;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .scorecard {
+    flex-direction: column;
+  }
+  .table-container,
+  .stats-card-container {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 600px) {
+  .scorecard {
+    width: 100%;
+  }
+}
+
+/* ===================================================== */
+/* Recent Balls Section styling */
+/* ===================================================== */
+
+.recent-balls {
+  display: flex;
+  justify-content: start;
+  background-color: #f4f4f4;
+  margin: 20px 10px 10px 150px;
+  padding: 10px;
+  width: 80%;
+  flex-direction: column;
+}
+
+.recent-balls p {
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.recent-balls span {
+  font-size: 12px;
+  font-weight: 600;
+}
+.balls {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+.box-container {
+  display: flex;
+  justify-content: start;
+  flex-wrap: wrap;
+  gap: 4px;
+  width: 80%;
+}
+
+.vertical-line {
+  margin: 5px 5px 0px;
+  width: 1px; /* Line thickness */
+  height: 25px; /* Line height */
+  background-color: gray; /* Line color */
+}
+
+.boxes {
+  display: flex;
+  gap: 3px;
+}
+
+.box {
+  width: 30px;
+  height: 30px;
+  background-color: #131b2a;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 900px) {
+  .box {
+    width: 30px;
+    height: 25px;
+    font-size: 15px;
+  }
+  .boxes p {
+    font-size: 12px;
+  }
+  .recent-balls {
+    margin: 20px 10px 10px 50px;
+  }
+}
+
+@media (max-width: 400px) {
+  .box {
+    width: 20px;
+    height: 20px;
+    font-size: 14px;
+  }
+  .vertical-line {
+    margin: 1px 5px 0px;
+    height: 15px; /* Line height */
+    background-color: gray; /* Line color */
+  }
+  .boxes p {
+    font-size: 10px;
+  }
+  .box-container {
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+    gap: 4px;
+    /* width: 100%; */
+  }
+  .recent-balls{
+    width: 100%;
+    margin: 20px 0px;
+  }
+}
+
+/* ======================================== */
+/* PLAYERS LIST SECTION */
+/* ======================================== */
+
+.player-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* height: 10vh; */
+  background-color: #f0f0f0;
+}
+
+.players {
+  background-color: #131b2a;
+  color: white;
+  width: 80%;
+  /* max-width: 800px; */
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  letter-spacing: 1px;
+}
+
+.players p span {
+  font-size: 20px;
+  font-weight: 500;
+  color: white;
+}
+
+h3 {
+  margin: 15px 0 5px;
+}
+
+p {
+  margin: 5px 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .players {
+    width: 90%;
+    padding: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .players {
+    width: 95%;
+    padding: 10px;
+  }
+  .players p span {
+    font-size: 12px;
+    font-weight: 500;
+    color: white;
+  }
+  .players p {
+    font-size: 12px;
+  }
+}
